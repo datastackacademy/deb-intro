@@ -13,17 +13,16 @@ We hope you enjoy this course, and are confident that it will teach you all the 
 ## Setting up your development environment
 
 Before we begin to go through the course material, it is important for everyone to set up their development environment so that you can easily access all the resources we will use for this project (code, repository material, cloud resources). Here is an overview of the setup steps:
-1. Windows Subsystem for Linux (WSL) install (for Windows users only)
-1. Clone the git repository
-1. Python setup
-1. Google Cloud setup
+1. [Windows Subsystem for Linux (WSL) install](#windows-subsystem-for-linux(wsl)) (for Windows users only)
+1. [Clone the git repository](#git-project)
+1. [Python setup](#python)
     - Account creation
     - Project setup
     - Permissions and access
     - Service account configuration
     - Storage bucket configuration
     - Cloud SDK setup
-1. IDE setup
+1. [IDE setup](#ide-setup)
 ### Windows Subsystem for Linux (WSL)
 
 Follow the instructions for [Windows Subsystem for Linux (WSL) setup](windows-setup.md), then return here and continue to follow this guide.
@@ -147,3 +146,45 @@ Navigate to the project folder containing your local copy of the git repository 
 For more details, see the [official Jupyter installation guide](https://jupyter.org/install).
 
 <br>
+
+### IDE Setup
+
+This section will give you a couple options to install and use our favorite IDEs. Feel free to use whichever one works best for you. In short:
+
+- VS Code is much more lean and easier to get started
+- PyCharm is feature rich and better suited for someone who's gonna be coding a lot in Python
+
+We recommend VSCode for the data engineering workflow demonstrated in this course, but some people prefer PyCharm, and it is very useful for those doing a lot of Python work.
+
+#### Microsoft Virtual Studio Code (VSCode)
+
+VS Code
+
+1. Download and install Visual Studio (VS) Code
+    - For Ubuntu users, you can easily install VS Code via snap:
+        ```
+        sudo snap install code --classic
+        ```
+2. Once you have VS Code installed and started up, add the Python Extension. Go to the extensions tab by clicking this icon:
+![VSCode extensions icon](vs_code_extensions.png)
+We recommend installing a few very helpful extensions that will make your workflow much more productive.
+    - Python extension: search for 'ms-python.python'. Click on the extension and install it. This contains support for python itself, linting (style checking), notebooks, and much more.
+    - MySQL extension: search for 'mysql'. There are two extensions with the same name; select the one by author Jan Hun. Click to install.
+    - Jupyter extension (search for 'Jupyter')
+    - Github (search for 'github'). You won't be doing a lot of contribution to the git repository for this course, but having git/github integration set up in your IDE will be indispensable for when you starting working as a data engineer.
+3. Navigate to project folder where you want to clone the deb project from our previous step
+4. If you have already created a virtualenv in python setup, you can click the python version icon in the bottom left side of the VS Code window and select it using the drop down menu.
+
+>If you prefer to use a terminal, you can open an inline terminal by >pressing >`ctrl+``. Use the following command to activate the virtual >environment.
+>```
+>source [VENV FOLDER NAME]/bin/activate
+>```
+
+Once your virtualenv is activated, you can can use pip to install the project dependencies:
+```
+pip install -r requirements.txt
+```
+
+VS Code has a built in Source Control interface for git. To stage and create commits, navigate to the Source Control tab by clicking on the Source Control icon, and add the files you would like to stage and commit.To change branches or create a new branch, you can click on the Git Branch icon at thebottom right of the VS code window.
+
+VS Code has a huge number of official and community extensions, so you can customize your coding environment to your heart's content.
