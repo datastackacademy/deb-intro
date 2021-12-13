@@ -1,5 +1,5 @@
 # Welcome to [Data Stack Academy](https://www.datastack.academy/)!
-<img align="right"
+<img style="float: right;"
     src="imgs/home-hero.svg" 
     alt="a picture of a person with long brown hair sitting behind a desk with a laptop next to a green plant."
     >
