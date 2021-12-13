@@ -1,6 +1,14 @@
-# Data Engineering Bootcamp at Data Stack Academy
+# Welcome to [Data Stack Academy](https://www.datastack.academy/)!
+<img align="right"
+    src="imgs/home-hero.svg" 
+    alt="a picture of a person with long brown hair sitting behind a desk with a laptop next to a green plant."
+    >
+
+## Data Engineering Bootcamp
 
 Welcome to the intro repository for Data Engineering Bootcamp. This repository contains the first 2 chapters of our larger 10-chapter data engineering curriculum which is taught in a 17-week bootcamp. This public preview is limited to the Getting Started Guide and first two chapters of material.
+
+Learn more about the course at [datastack.academy](https://www.datastack.academy/)!
 
 
 ## Getting Started
