@@ -4,7 +4,7 @@
     alt="a picture of a person with long brown hair sitting behind a desk with a laptop next to a green plant."
     >
 
-## Data Engineering Bootcamp
+## The Data Engineering Hub
 
 Welcome to the intro repository for Data Engineering Bootcamp. This repository contains the first 2 chapters of our larger 10-chapter data engineering curriculum which is taught in a 17-week bootcamp. This public preview is limited to the Getting Started Guide and first two chapters of material.
 
