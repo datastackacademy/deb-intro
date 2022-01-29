@@ -1,2 +1,3 @@
 # Python and SQL
-Instruction in the jupyter notesbooks in the `notebooks` directory.
+
+Instructions are in the jupyter notebooks in the `notebooks` directory.

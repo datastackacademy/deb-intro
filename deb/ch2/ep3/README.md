@@ -88,7 +88,7 @@ SELECT ship_state_province, SUM(shipping_fee) FROM orders GROUP BY ship_state_pr
 ```
 
 ## Multiple columns
-Our `GROUP BY` statement can be more than one column; we can simply provide a comma separated list of column names and our data is grouped by the unique value combinations within those columns. For example, if we wanted to know the total number of orders and average shipping fee for each customer and empolyee pair, we could query the following:
+Our `GROUP BY` statement can be more than one column; we can simply provide a comma separated list of column names and our data is grouped by the unique value combinations within those columns. For example, if we wanted to know the total number of orders and average shipping fee for each customer and employee pair, we could query the following:
 
 ```sql
 SELECT customer_id, employee_id, COUNT(*), AVG(shipping_fee) FROM orders GROUP BY customer_id, employee_id;
@@ -99,7 +99,7 @@ As we can see in the output, we get aggregation values for each pair of employee
 
 ## `WHERE` vs `HAVING`
 
-In our base aggregation functions, we used `WHERE` to filter our values before aggregating. We can do the same for a `GROUP BY`. For example, if we want to count only orders that *have already been paid for* for each customer, we can just add a `WHERE paid_date IS NOT NULL` to our existing query following the `FROM` statment:
+In our base aggregation functions, we used `WHERE` to filter our values before aggregating. We can do the same for a `GROUP BY`. For example, if we want to count only orders that *have already been paid for* for each customer, we can just add a `WHERE paid_date IS NOT NULL` to our existing query following the `FROM` statement:
 
 ```sql
 SELECT customer_id, COUNT(id) FROM orders WHERE paid_date IS NOT NULL GROUP BY customer_id;

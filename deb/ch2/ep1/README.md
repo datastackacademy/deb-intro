@@ -1,6 +1,6 @@
 # What is a database?
 
-In most basic terms, a database is a collection of information. This is necessarily a very generalized term; there are many different ways someone might want to collect and store information. The commonality of databases is they are stored on a computure and controled by a **Database Management System** or **DBMS**. Let's take a quick look at the main two types of databases and the DBMSs associated with each.
+In most basic terms, a database is a collection of information. This is necessarily a very generalized term; there are many different ways someone might want to collect and store information. The commonality of databases is they are stored on a computer and controlled by a **Database Management System** or **DBMS**. Let's take a quick look at the main two types of databases and the DBMSs associated with each.
 
 
 # Types of Databases
@@ -44,7 +44,7 @@ Not all data falls neatly into a structured relationship however. The rise of we
 
 There are multiple types of NoSQL implementations but MongoDB has provided a great overview of them [in this handy guide.](https://www.mongodb.com/nosql-explained)
 
-[MongoDB](https://docs.mongodb.com/) is also one of the most common DBMS for NoSQL. They store data in a [style that closely models JSON.](https://docs.mongodb.com/guides/server/introduction/) which is the **document databse** mentioned in their NoSQL guide.
+[MongoDB](https://docs.mongodb.com/) is also one of the most common DBMS for NoSQL. They store data in a [style that closely models JSON.](https://docs.mongodb.com/guides/server/introduction/) which is the **document database** mentioned in their NoSQL guide.
 
 Just as Hive extended SQL to distributed file systems, [Apache HBase](https://hbase.apache.org/) is a distributed implementation of NoSQL. This provides platform that can support big data while accessing it through the same interface as NoSQL. 
 
@@ -141,7 +141,7 @@ nowarning (\w) Don't show warnings after every statement.
 For server side help, type 'help contents'
 ```
 
-This is a command line interface where we can directly write SQL. We havne't learned any yet but try entering `SHOW databases;` to list the available databases:
+This is a command line interface where we can directly write SQL. We haven't learned any yet but try entering `SHOW databases;` to list the available databases:
 
 ```bash
 MariaDB [(none)]> SHOW databases;
@@ -308,7 +308,7 @@ SELECT * FROM sets WHERE year = 1990;
 We can also use `=` with text fields, we simply have to contain the value we're comparing in single quotes:
 
 ```sql
--- selecting strings (text) must be wrapped in single qoutes (')
+-- selecting strings (text) must be wrapped in single quotes (')
 SELECT * FROM sets WHERE name = 'Glory Glider';
 
 -- try other values: Helicopter, Wave Racer
@@ -373,7 +373,7 @@ SELECT * FROM sets WHERE num_parts BETWEEN 200 AND 205;
 ```
 
 ### Using `LIKE`
-We saw how to directly match stings using `=` but often we want to look for columns containing a value. To do this, we use the `LIKE` condition. This statement takes the column name, followed by `LIKE` and then string to compare against. Within this comparision string, we use the `%` wildcard to match anything. For example, to get colors starting with `Dark` we would do:
+We saw how to directly match stings using `=` but often we want to look for columns containing a value. To do this, we use the `LIKE` condition. This statement takes the column name, followed by `LIKE` and then string to compare against. Within this comparison string, we use the `%` wildcard to match anything. For example, to get colors starting with `Dark` we would do:
 
 ```sql
 -- select any color starting with Dark
@@ -530,7 +530,7 @@ For example, if we want to remove our Pastel Green row, we can run the following
 DELETE FROM colors WHERE name = 'Pastel Green';
 ```
 
-The `DELETE` statment deletes **ALL** rows that match the `WHERE` condition. As with `UPDATE`, this can be helpful when we want to remove multiple rows at once but can be very dangerous if our condition is too broad.
+The `DELETE` statement deletes **ALL** rows that match the `WHERE` condition. As with `UPDATE`, this can be helpful when we want to remove multiple rows at once but can be very dangerous if our condition is too broad.
 
 ```sql
 -- you can also delete multiple rows at the same time with a broader condition that spans multiple rows
