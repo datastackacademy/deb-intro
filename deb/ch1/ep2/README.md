@@ -11,11 +11,11 @@ This episode's code resources are all in notebook format:
 
 Hopefully by now everyone has at least the Python portion of your development environment set up. Try downloading one of the above notebooks and make sure that you can open them locally in Jupyter (run `jupyter-lab` first). There is no additional setup needed for viewing the notebooks for this episode, and each of them will walk you through the concepts with code examples.
 
-This episode looks in a bit more detail at the datatypes you will use most commonly as a data engineer, and also further explore using functions in Python. We will walk through the notebooks together in class.
+This episode looks in a bit more detail at the data types you will use most commonly as a data engineer, and also further explore using functions in Python. We will walk through the notebooks together in class.
 
 ## Collection data types
 
-Python comes with four built-in collection datatypes: lists, tuples, sets, and dictionaries. First we will take a look at the list type.
+Python comes with four built-in collection data types: lists, tuples, sets, and dictionaries. First we will take a look at the list type.
 
 ### Lists
 
@@ -346,7 +346,7 @@ for item in stringy_list:
         print(f"the character '{char}' from the word '{item}'")
 ```
 
-Another powerful flow control tool is the conditional statement, also known as an `if ... else` statement. In Python, the syntax is straightforward - it begins with the declaration `if condition:` followed by a block of indented text to be executed if `condtion` evaluates as `True`. For example:
+Another powerful flow control tool is the conditional statement, also known as an `if ... else` statement. In Python, the syntax is straightforward - it begins with the declaration `if condition:` followed by a block of indented text to be executed if `condition` evaluates as `True`. For example:
 
 ```python
 if True:
@@ -381,7 +381,7 @@ We can also create compound conditions using `and` and `or`:
 ```python
 test_number = 5
 if test_number > 0 and test_number % 2 == 0:
-    print(f"{test_number} is a postive even number")
+    print(f"{test_number} is a positive even number")
 elif test_number > 0:
     print(f"{test_number} is a positive odd number")
 else:
@@ -435,7 +435,7 @@ When the Python interpreter encounters an expression in the form `[expression fo
 
 ### Iterators
 
-This brings us to the Python concept of *iterators*. All the collection types (list, dict, set, tuple) we've been working with are iterators, as is the `str` (string) type. *iterators* are python objects capable of returning their members one at a time, permitting them to be iterated over in a for loop. This means that iterators have built in `__iter__()` and `__next__()` methods (we will learn more about creating these whe we discuss Python classes). In addtion to the collection objects, we've also used the iterator `range()` when making lists of numbers. One aspect of iterators that `range()` helps illustrate is that they can be lazily evaluated. What this means is that the iterator does not have to store all the values to be iterated on; instead it can store the logic for creating that logic and all the values are enumerated once iteration is invoked.
+This brings us to the Python concept of *iterators*. All the collection types (list, dict, set, tuple) we've been working with are iterators, as is the `str` (string) type. *iterators* are python objects capable of returning their members one at a time, permitting them to be iterated over in a for loop. This means that iterators have built in `__iter__()` and `__next__()` methods (we will learn more about creating these whe we discuss Python classes). In addition to the collection objects, we've also used the iterator `range()` when making lists of numbers. One aspect of iterators that `range()` helps illustrate is that they can be lazily evaluated. What this means is that the iterator does not have to store all the values to be iterated on; instead it can store the logic for creating that logic and all the values are enumerated once iteration is invoked.
 
 ```Python
 print(range(5, 10))
@@ -470,8 +470,8 @@ Notice that this function takes no input arguments and returns `None`. [Read mor
 Now let's look at using input arguments in our functions. We can do that by adding comma-separated variables in the function definition:
 
 ```python
-def input_function(first_intput, second_input, third_input):
-    print(f"My first input was {first_intput}, my second input was {second_input} and I refuse to tell you that {third_input} was my thrid input")
+def input_function(first_input, second_input, third_input):
+    print(f"My first input was {first_input}, my second input was {second_input} and I refuse to tell you that {third_input} was my third input")
 
 input_function(1, "cake", ["secret", "list"])
 ```
@@ -502,7 +502,7 @@ print(add_numbers(4,5))
 print(add_numbers("Hello", " friends"))
 ```
 
-When defining a function, we can also set default values for some or all of the input arguments. To do this, all that is needed is to follow the argument name with `=default_value`. Note that if you are using a mix of default arguments and nondefault arguments, all arguments without a default value must come first. Let's make a string reversing function that defaults to capitalizing the string as well:
+When defining a function, we can also set default values for some or all of the input arguments. To do this, all that is needed is to follow the argument name with `=default_value`. Note that if you are using a mix of default arguments and non-default arguments, all arguments without a default value must come first. Let's make a string reversing function that defaults to capitalizing the string as well:
 
 ```python
 def flip_string_and_reverse(input_str, cap=True):
@@ -515,7 +515,7 @@ print(flip_string_and_reverse("Yellow carD"))
 print(flip_string_and_reverse("no cap", False))
 ```
 
-If there are multiple defualt arguments for a function and you only want to specific a nondefualt value for one of them, you can use `default_arg=new_value` when calling the function. This must come after any nondefault arguments when calling the function. 
+If there are multiple default arguments for a function and you only want to specific a non-default value for one of them, you can use `default_arg=new_value` when calling the function. This must come after any non-default arguments when calling the function. 
 
 ```python
 def string_formatting(input_str, cap_first=True, reverse=False):
@@ -599,5 +599,5 @@ That wraps up our discussion of collection types, flow control, and functions. T
 
 ### Further Reading:
 - [Python list functions](https://docs.python.org/3/tutorial/datastructures.html)
-- [Python collection datatypes](https://realpython.com/python-collections-module/)
+- [Python collection data types](https://realpython.com/python-collections-module/)
 - [Guide to Python Code Style](https://docs.python-guide.org/writing/style/)

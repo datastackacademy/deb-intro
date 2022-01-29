@@ -73,7 +73,7 @@ print(routes.info())
 
 ### describe()
 
-Another profiling function built into Pandas is [`describe()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html). This function gives us a statistical breakdown of our data, with minimum, maximum, mean, and standard deviation for numeric data, or (in the case of object data like strings or timestamps), count, most common value, frequency of that value, and a few other things depending on the exact datatypes. 
+Another profiling function built into Pandas is [`describe()`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html). This function gives us a statistical breakdown of our data, with minimum, maximum, mean, and standard deviation for numeric data, or (in the case of object data like strings or timestamps), count, most common value, frequency of that value, and a few other things depending on the exact data types. 
 
 ```python
 print(routes.describe())

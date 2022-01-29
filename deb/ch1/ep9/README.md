@@ -61,7 +61,7 @@ Output:
 8191 rows × 5 columns
 </pre>
 
-Notice that our mapper function simply uses a dictionary, with the airline short codes as keys and the full names as values. That makes it easy to get the full airline name from a shortcode, by simply indexing the dictionary with the short code (`mapper[value]'). The last line aboe uses `.loc` to filter out records that cannot be mapped to an airline name. 
+Notice that our mapper function simply uses a dictionary, with the airline short codes as keys and the full names as values. That makes it easy to get the full airline name from a shortcode, by simply indexing the dictionary with the short code (`mapper[value]'). The last line above uses `.loc` to filter out records that cannot be mapped to an airline name. 
 
 Let's practice more to get familiar with using `map()` effectively. The following function simply converts the `stops` column to a floating-point value:
 
@@ -83,7 +83,7 @@ Output:
 </pre>
 
 ### `applymap`
-The `map()` function we have been using is a built-in function of `Series` objects. There is a similar built-in functon of `DataFrame`s: `applymap()`. The behavior is similar but the input and output are `DataFrame`s instead of series:
+The `map()` function we have been using is a built-in function of `Series` objects. There is a similar built-in function of `DataFrame`s: `applymap()`. The behavior is similar but the input and output are `DataFrame`s instead of series:
 
 ```python
 # read data fom csv
@@ -118,7 +118,7 @@ airline	airline_name	src	dest	stops
 
 ### `Apply()`: Multi-Column Transformations
 
-While the `.map()` method allows transformation over a single column, pandas Dataframe `.apply()` method allows transformtion over multiple column values. You can use `.apply()` when you need to transform more than one column within a row.
+While the `.map()` method allows transformation over a single column, pandas DataFrame `.apply()` method allows transformation over multiple column values. You can use `.apply()` when you need to transform more than one column within a row.
 
 In the following example, we create an `encode_route_key()` method which concatenates airline, src, and dest fields  to create a unique route key for each row:
 
@@ -206,7 +206,7 @@ route_key	route_key_long
 
 ### Complex
 
-The section below shows an example where we apply a function over multiple columns which produces multiple columns in a Dataframe. 
+The section below shows an example where we apply a function over multiple columns which produces multiple columns in a DataFrame. 
 
 In this example, we will produce two new columns called "nonstop" and "loop" depending on if there are no stops and if the `src` is also the `dest`.
 
@@ -517,4 +517,4 @@ Every dataset is different, and the exact procedure for cleaning your data will 
 - [Pandas applymap() docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.applymap.html)
 - [Pandas apply() docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html)
 - [Difference between map(), applymap(), and apply() methods](https://stackoverflow.com/questions/19798153/difference-between-map-applymap-and-apply-methods-in-pandas)
-- [Data Cleaning with Pandas and Numpy](https://realpython.com/python-data-cleaning-numpy-pandas/)
+- [Data Cleaning with Pandas and NumPy](https://realpython.com/python-data-cleaning-numpy-pandas/)
