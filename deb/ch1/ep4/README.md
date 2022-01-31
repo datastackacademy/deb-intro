@@ -96,10 +96,10 @@ Output:
 </pre>
 
 #### Time and Date
-In additon to the combined datetime class we've been exploring, `datetime` also has separate `time` and `date` classes which contain just the specified portions of temporal data. 
+In addition to the combined datetime class we've been exploring, `datetime` also has separate `time` and `date` classes which contain just the specified portions of temporal data. 
 
 ### Time deltas
-Dates and times are great for capturing when events occured, but we often also want to know how much time passes between events. This is where the `timedelta` object comes in. The quickest was to see how these work is simply use the `-` operator between two `datetime` objects:
+Dates and times are great for capturing when events occurred, but we often also want to know how much time passes between events. This is where the `timedelta` object comes in. The quickest was to see how these work is simply use the `-` operator between two `datetime` objects:
 
 ```python
 jan_first = datetime.datetime(2021, 1, 1)
@@ -371,7 +371,7 @@ Output:
 (Pdb)
 </pre>
 
-This is very useful for examing programming behavior in detail. If you are trying to track down the source of an error, you can set breakpoints in your code and take a close look at what is going on in your program at a particular point. Especially with difficult-to-diagnose errors, this can be much more helpful than simply using `print()` to print out variable values, which can get quite messy.
+This is very useful for examining programming behavior in detail. If you are trying to track down the source of an error, you can set breakpoints in your code and take a close look at what is going on in your program at a particular point. Especially with difficult-to-diagnose errors, this can be much more helpful than simply using `print()` to print out variable values, which can get quite messy.
 
 There's another useful feature of pdb besides the ability to set breakpoints. Once you have set a breakpoint and stopped program execution, you can the `n` and `s` commands to execute your program one line at a time:
 - `n`: continue execution until the next line and 'step over' any foreign functions (i.e., do not stop in a foreign function if one is called)

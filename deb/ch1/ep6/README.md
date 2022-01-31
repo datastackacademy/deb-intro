@@ -1,6 +1,6 @@
-# Chapter 1, Episode 6 (Introduction to Pandas)
+# Chapter 1, Episode 6 - (Introduction to Pandas)
 
-[Pandas](https://pandas.pydata.org/) is a very powerful Python library for working with data. It provides data structures and tools for doing high-performance, practical data analysis in Python. It is one of the fundamental  building blocks of scientific computing in the Python ecosystem (along with Numpy, Scipy...).
+[Pandas](https://pandas.pydata.org/) is a very powerful Python library for working with data. It provides data structures and tools for doing high-performance, practical data analysis in Python. It is one of the fundamental  building blocks of scientific computing in the Python ecosystem (along with NumPy, SciPy...).
 
 Here are some highlights of what Pandas provides:
   * an efficient DataFrame object for manipulating data
@@ -10,7 +10,7 @@ Here are some highlights of what Pandas provides:
 
 ## History
 
-In 2008, developer Wes McKinney began work on pandas while working at AQR Capital Management, because he needed a tool to perform quantititive analysis on financial data. By the next year, he had convinced AQR management to allow him to make the library open source. In 2012, the first edition of *Python for Data Analysis* was published, drawing more attention to the project. In 2015, pandas became a [NumFOCUS](https://numfocus.org/) sponsored project, which boosted it into the highest realm of research, data, and scientific computing open source projects. Pandas has become an indispensable tool for data scientists, engineers, researchers, and anyone needing to work efficiently with data, and now has millions of users around the world.
+In 2008, developer Wes McKinney began work on pandas while working at AQR Capital Management, because he needed a tool to perform quantitative analysis on financial data. By the next year, he had convinced AQR management to allow him to make the library open source. In 2012, the first edition of *Python for Data Analysis* was published, drawing more attention to the project. In 2015, pandas became a [NumFOCUS](https://numfocus.org/) sponsored project, which boosted it into the highest realm of research, data, and scientific computing open source projects. Pandas has become an indispensable tool for data scientists, engineers, researchers, and anyone needing to work efficiently with data, and now has millions of users around the world.
 
 ## Episode Resources
   The code resources for this episode are all in [Jupyter notebook](https://jupyter.org) format:
@@ -95,7 +95,7 @@ The first example assigns the value `10` to a single cell. The last example uses
 
 ### Series
 
-In addition to DataFrames, Pandas also provides a Series datatype. Think of a Series as one dimensional (a single row, like a Python list), whereas a dataframe is two-dimensional (rows and columns).
+In addition to DataFrames, Pandas also provides a Series datatype. Think of a Series as one dimensional (a single row, like a Python list), whereas a DataFrame is two-dimensional (rows and columns).
 
 ```
 type(df['apples'])
@@ -196,7 +196,7 @@ A very common use of Pandas is to rename or drop columns, or to remove certain r
 updated_airports = airports.rename(columns={'airport': 'airport_full_name',
                         'iata': 'iata_code'})
 
-# drop the lat and lon columns from the new DataFrame inplace
+# drop the lat and lon columns from the new DataFrame in place
 updated_airports.drop(columns=['lat', 'lon'], inplace=True)
 
 # remove rows - removing rows 0-3 by their label (index)

@@ -14,7 +14,7 @@ With the database up and running, create SQL scripts to complete the following c
 
 ## DML challenges
 1. Insert a new order:
-    1. With existing customers, employees, etc. Query the respecitve tables for real values, then add a new row to `orders` and `order_details`.
+    1. With existing customers, employees, etc. Query the respective tables for real values, then add a new row to `orders` and `order_details`.
     1. Insert a new customer _and_ their first order.
 1. Update the all status 'Shipped' orders to 'Closed'.
 1. Update all `orders` with status "New" and a shipping date to "Shipped".

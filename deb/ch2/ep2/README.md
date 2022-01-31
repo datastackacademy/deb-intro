@@ -149,7 +149,7 @@ SELECT id * 2, name FROM colors WHERE name like 'Trans%';
 
 For decimal columns, you can use arithmetic operators such as: +, -, *, /
 
-We can use multiple operators in a single select as well. Let's say we want to play around with incrementing, decrimenting, and checking how many dozens of a set we have, all in one query. We can simply use each operator within the `SELECT`:
+We can use multiple operators in a single select as well. Let's say we want to play around with incrementing, decrementing, and checking how many dozens of a set we have, all in one query. We can simply use each operator within the `SELECT`:
 
 ```sql
 SELECT

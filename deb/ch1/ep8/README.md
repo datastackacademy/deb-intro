@@ -20,7 +20,7 @@ data_dir = '../../../data/input/ch1/'
 routes_file = data_dir + 'routes.csv'
 routes = pd.read_csv(routes_file, header=0)
 
-# get rounts leaving a src
+# get routes leaving a src
 routes_per_src = routes.groupby('src').src.count()
 
 # get total stops leading to each dest
@@ -112,7 +112,7 @@ AAR    8    0    0    0
 You can pass an list of columns to `groupby()` method to aggregate by multiple columns at the same time. The example below calculates flight counts per airline route (airline, src, dest):
 
 ```python
-# get flight counts for dictinct routes
+# get flight counts for distinct routes
 routes_per_pair = routes.groupby(['src', 'dest']).src.count()
 routes_per_pair.head(25)
 ```
@@ -151,7 +151,7 @@ Name: src, dtype: int64
 
 ## Joins
 
-You may have noticed during your data exploration that the `iata` codes in the `airports` data correspond to the `scr` and `dest` in the `routes` data. This is a frequent occurence in data; there are common fields that will allow us to link or join information in our two datasets.
+You may have noticed during your data exploration that the `iata` codes in the `airports` data correspond to the `scr` and `dest` in the `routes` data. This is a frequent occurrence in data; there are common fields that will allow us to link or join information in our two datasets.
 
 When joining data, one of the most important issues is the *cardinality* of our data. Cardinality refers to the numerical relationship between rows in one table and rows in another table, when performing a join. There are two types of relationships that we will encounter most commonly:
 - One-to-one: this type of relationship exists when each row in one table has only one related row in another table. An airline related example might be seat assignments - on a given flight, each passenger occupies only one seat, and each seat contains only one passenger.
@@ -163,7 +163,7 @@ Understanding cardinality is important when choosing the details of a join metho
 Another related concept to discuss before we look at the details of Pandas functions is [join types](https://en.wikipedia.org/wiki/Join_(SQL)). There are many possible types of joins, reflecting different possible cardinality relationships in data. Pandas supports the following join types:
 - Inner Join or Natural Join: To keep only rows that match from the data frames, specify the argument how=‘inner’ (more details below in the discussion of `merge()`).
 - Outer Join or Full Outer Join: To keep all rows from both data frames, specify how=‘outer’.
-- Left Join or Left Puter Join: To include all the rows of your data frame x and only those from y that match, specify how=‘left’.
+- Left Join or Left Outer Join: To include all the rows of your data frame x and only those from y that match, specify how=‘left’.
 - Right Join or Right outer join: To include all the rows of your data frame y and only those from x that match, specify how=‘right’.
 
 This Venn diagram should help you to visualize the relationships:
@@ -190,7 +190,7 @@ routes = pd.read_csv(routes_file, header=0)
 
 ### Merge
 
-First we will learn about Pandas' `merge()` function, the most flexible way to combine data. [`pd.merge()`](https://pandas.pydata.org/docs/reference/api/pandas.merge.html) starts with two required arguments, the `DataFrame`s to be joined. Next we have the following postional arguments:
+First we will learn about Pandas' `merge()` function, the most flexible way to combine data. [`pd.merge()`](https://pandas.pydata.org/docs/reference/api/pandas.merge.html) starts with two required arguments, the `DataFrame`s to be joined. Next we have the following positional arguments:
 - `how`: the strategy for joining the data. The default value is `'inner'`, with `'outer'`, `'left'`, and `'right'` being the other possible values (refer to the list of join types above).
 - `on`: the columns to join on (if the column name is the same in both `DataFrame`s being joined)
 - `left_on` and `right_on`: columns from the respective tables (if the column names differ between `DataFrames`)
@@ -429,7 +429,7 @@ Output:
 
 ### Concat()
 
-The last way to combine `DataFrames` we will discuss is using the `concat()` method. Unlike the joins we have been discussing, `concat()` does not attempt to match common data within columns. Instead, it can be thought of as simply stacking the `DataFrames` on top of or next to each other. The first argument of `concat()` is a list of obects to concatenate, usually `DataFrames`. 
+The last way to combine `DataFrames` we will discuss is using the `concat()` method. Unlike the joins we have been discussing, `concat()` does not attempt to match common data within columns. Instead, it can be thought of as simply stacking the `DataFrames` on top of or next to each other. The first argument of `concat()` is a list of objects to concatenate, usually `DataFrames`. 
 We then specify which way to concatenate them with the `axis` argument. With `axis=0`, the `DataFrames` are concatenated vertically (stacked on top of each other). All column names are retained and columns common to the `DataFrames` are combined. Similarly, `axis=1` is a horizontal concatenation; the `DataFrames` are stacked next to each other, aligned by index.
 
 ```python

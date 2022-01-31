@@ -1,14 +1,5 @@
-# Comments
-
-- the notebooks are old Jen's notebooks
-- they need to be renamed and updated to match miro
-- use `northwind_small` database for consistency with pervious episodes
-    - `northwind` database can more relations and can be used for harder practice projects
-    - or use it if you want to show more complex joins!
-- use start/stop/ shell scripts for database usage
-
 # `FROM` multiple tables
-Often we have data stored in multiple tables that we would like to combine in query. The formal way to do this is a `JOIN` statement which will be the focus of this chapter but let's first see a quick way to do this using just a `SELECT` and `WHERE` statment. As usual, start up the database using the `start_db.sh` script. We can then connect to it using the VSCode extension or your preferred method. Once the connection is made, select the `northwind_small` database. In VSCode you can click on it and then run the following query to see the tables:
+Often we have data stored in multiple tables that we would like to combine in query. The formal way to do this is a `JOIN` statement which will be the focus of this chapter but let's first see a quick way to do this using just a `SELECT` and `WHERE` statement. As usual, start up the database using the `start_db.sh` script. We can then connect to it using the VSCode extension or your preferred method. Once the connection is made, select the `northwind_small` database. In VSCode you can click on it and then run the following query to see the tables:
 
 ```sql
 SHOW tables;
@@ -22,7 +13,7 @@ FROM orders, customers
 WHERE orders.customer_id = customers.id;
 ```
 
-We have our usual `SELECT *` returning all columns. However, in the `FROM` statement, we have a list of comma separated table names. The `WHERE` clause then lets us filter the rows as usual except our condition is now those where the `customer_id` from `orders`, noted in `table_name.column_name` format is equal to the `customers.id`. This means we will be only getting rows where that condition holds and excluding all others (similar to the `INNER JOIN` later). This is a quick way to get data from multiple tables which is great for simple conditions but usually we will be using the powerful SQL `JOIN` statment.
+We have our usual `SELECT *` returning all columns. However, in the `FROM` statement, we have a list of comma separated table names. The `WHERE` clause then lets us filter the rows as usual except our condition is now those where the `customer_id` from `orders`, noted in `table_name.column_name` format is equal to the `customers.id`. This means we will be only getting rows where that condition holds and excluding all others (similar to the `INNER JOIN` later). This is a quick way to get data from multiple tables which is great for simple conditions but usually we will be using the powerful SQL `JOIN` statement.
 
 # Joining in SQL
 In the first chapter, we saw how to join two DataFrames. We can do the same thing with SQL tables! Joining two (or more) tables together allows us to combine information from those tables into a single table based on the joining condition. This flexibility allows us to create tables that are well suited for storing specific information but still have a mechanism to combine it with information stored in other tables. For example, if we were running a database for a small business and to track orders in one table and customer information in another, we would still be able to join these two sources together. A formal `JOIN` also gives us more syntax to control the output than our above joinless-join. Let's review the syntax of a `JOIN`
