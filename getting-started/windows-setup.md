@@ -9,6 +9,11 @@ First, follow the [official install guide](https://docs.microsoft.com/en-us/wind
 >**Running a Windows Build Older than 18362**
 >If you are running a Windows Build lower than 18362, before enabling WSL 2 you must upgrade Windows using Windows Update Assistant. To find your Windows Build info, hit the Windows key and type 'System Information'. (At the time of this writing, the latest build is 10.0.19041)
 
+> **Window 11**
+>Some users are reporting issues with WSL when upgrading to Windows 11, with no clear fix yet. The links below might help you troubleshoot the problem. If you experience this, please let the instructor know, and we can take a look at your specific installation:
+- [WSL File System Error # 1](https://github.com/microsoft/WSL/issues/7435)
+- [WSL File System Error # 2](https://github.com/microsoft/WSL/issues/5456)
+
 ## Installing Ubuntu 
 
 Once you have WSL installed, you can install Ubuntu 20.04, which is our recommended Linux distribution:
@@ -30,80 +35,6 @@ sudo apt -y upgrade
 
 >You MUST first update/upgrade Ubuntu before you can properly install and run Python
 
-## Installing Python 
-
-This course is developed for Python version 3.7. Even though python 3.8 (and 3.9) is currently available, a lot of the dependency packages used by this course (such as the google cloud components) don't support it. Please make sure that you follow the instructions below to properly install Python 3.7.
-
-Note: You can install and use other python versions alongside your 3.7 version. That's why we always recommend using a python virtualenv (more details below).
-
-To install Python 3.7, first add the *deadsnake* ppa repos which contain the appropriate binaries:
-
-```
-sudo apt update
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-```
-
-Now install Python 3.7, pip, and virtualenv:
-```
-sudo apt install python3.7
-sudo apt install python3-pip
-python3.7 -m pip install --upgrade setuptools pip virtualenv
-```
-
-Some users will need to add `pip` to your PATH environment variable. If you can run `pip3` from your terminal, you can skip this step:
-```
-export PATH=$PATH:/home/{%USER NAME%}/.local/bin
-```
-
-# Installing and using virtualenv
-
-virtualenv is a tool that will let you create *virtual environments*, which are project-specific Python environments where you can install packages and make other configuration changes. This will let you manage multiple Python projects, each of which has its own dependency requirements, on your system. Without virtualenv, you would inevitably run into dependency conflicts because those requirements are different for every project.
-
-To create and use a virtual environment:
-```
-# to create a python3.7 specific virtualenv
-python3.7 -m venv venv
-# to activate your virtualenv
-source venv/bin/activate
-# check your python/pip version
-python -V
->> Python 3.7.9
-pip -V
->> pip 20.1.1 from /tmp/venv/lib/python3.7/site-packages/pip (python 3.7)
-# enjoy installing pip packages
-pip install tabulate
-python -c 'from tabulate import tabulate; print(tabulate([["Sun",696000,1989100000],["Earth",6371,5973.6]], headers=["Planet","R (km)", "mass (x 10^29 kg)"]));'
-```
-
-Please refer to [this stackoverflow discussion](https://stackoverflow.com/questions/41430706/pyvenv-returns-non-zero-exit-status-1-during-the-installation-of-pip-stage) if you get the following error while creating your venv:
-```
-Error: Command '['/home/user/my_venv_dir/bin/python', '-Im', 'ensurepip', 
-'--upgrade', '--default-pip']' returned non-zero exit status 1
-```
-To summarize, run the following to fix this issue:
-```
-python3.7 -m venv --without-pip venv
-source venv/bin/activate
-curl https://bootstrap.pypa.io/get-pip.py | python
-deactivate
-source venv/bin/activate
-```
-
-### Deactivating and removing a virtual environment
-
-To deactivate the virtual environment and revert back to using your system-wide Python configuration, run
-
-```
-deactivate
-```
-
-You can delete a virtualenv (and recreate it) by removing the venv directory:
-
-```
-rm -rf venv
-```
 
 ## Accessing Windows files
 
