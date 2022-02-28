@@ -33,7 +33,7 @@ The source code, examples, and answers to exercises on this course are accessibl
 
 ```
 cd ~
-git clone https://github.com/datastackacademy/data-engineering-bootcamp.git
+git clone https://github.com/datastackacademy/deb-intro.git
 ```
 
 Let's walk through the project folder together. Inside it you should see:
