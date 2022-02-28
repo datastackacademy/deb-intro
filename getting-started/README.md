@@ -12,7 +12,8 @@ We hope you enjoy this course, and are confident that it will teach you all the 
 
 # Setting up your development environment
 
-Before we begin to go through the course material, it is important for everyone to set up their development environment so that you can easily access all the resources we will use for this project (code, repository material, cloud resources). Here is an overview of the setup steps:
+Before we begin to go through the course material, it is important for everyone to set up their development environment so that you can easily access all the resources we will use for this project (code, repository material, cloud resources).
+Here is an overview of the setup steps:
 1. Windows Subsystem for Linux (WSL) install (for Windows users only)
 1. Clone the git repository
 1. Python setup
