@@ -4,7 +4,7 @@ You can use your choice of operating system throughout this course - Linux, Mac 
 
 ## Enabling WSL 2
 
-First, follow the [official install guide](https://docs.microsoft.com/en-us/windows/wsl/install) to install WSL 2.
+First, follow the [official install guide](https://docs.microsoft.com/en-us/windows/wsl/install) to install WSL 2, up to the section called "Ways to run multiple Linux distributions with WSL".
 
 >**Running a Windows Build Older than 18362**
 >If you are running a Windows Build lower than 18362, before enabling WSL 2 you must upgrade Windows using Windows Update Assistant. To find your Windows Build info, hit the Windows key and type 'System Information'. (At the time of this writing, the latest build is 10.0.19041)
