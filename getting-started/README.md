@@ -92,6 +92,7 @@ sudo apt-get install python3.7
 The output from this command will look something like this:
 <br />
 ![Python command line install terminal output](img/python3.7-install.png)
+
 If you get warning messages (in yellow), you can disregard them. On some systems the install will give non-fatal warnings. 
 
 Now you can install pip and other necessary tools:
