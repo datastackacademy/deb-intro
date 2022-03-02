@@ -25,6 +25,7 @@ Before we begin to go through the course material, it is important for everyone 
     - Cloud SDK setup
 1. Integrated development environment (IDE) setup
 
+>NOTE: This guide instructs you to issue terminal commands for some of the installation steps. If you want to learn a bit more about working at the command line, see this helpful guide: [Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners).
 ## Windows Subsystem for Linux (WSL)
 
 Follow the instructions for [Windows Subsystem for Linux (WSL) setup](windows-setup.md), then return here and continue to follow this guide.
@@ -87,6 +88,14 @@ sudo apt-get update
 Now, install Python 3.7 along with pip and virtualenv:
 ```
 sudo apt-get install python3.7
+```
+The output from this command will look something like this:
+![Python command line install terminal output](img/python3.7-install.png)
+If you get warning messages (in yellow), you can disregard them. On some systems the install will give non-fatal warnings. 
+
+Now you can install pip and other necessary tools:
+
+```
 sudo apt-get install python3-pip
 python3.7 -m pip install --upgrade setuptools pip virtualenv
 ```
