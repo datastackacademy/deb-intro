@@ -6,33 +6,72 @@
 
 ## The Data Engineering Hub
 
-Welcome to the intro repository for Data Engineering Bootcamp. This repository contains the first 2 chapters of our larger 10-chapter data engineering curriculum which is taught in a 17-week bootcamp. This public preview is limited to the Getting Started Guide and first two chapters of material.
+Welcome to the intro repository for Data Engineering Bootcamp. This repository contains the first 2 chapters of our larger data engineering curriculum, which is taught in a 17-week bootcamp. This public preview is limited to the Getting Started Guide and first two chapters of material.
 
 Learn more about the course at [datastack.academy](https://www.datastack.academy/)!
 
 
 ## Getting Started
 
-First, take a look at the [Getting Started Guide](/getting-started/)  to set up your development environment.
+First, take a look at the [daily setup instructions](./getting-started/daily_setup.md) in the Getting Started Guide to set up your development environment. If you're on Windows, please also follow the instructions in the [Windows setup guide](./getting-started/window-setup.md), so you can follow along with the Unix bash terminal lessons.
 
 This information will have you install all the necessary software to start this course.
 
 
 
-## Overview
+### Bootcamp Overview
 
-The course material is divided into 10 chapters:
-1. [Introduction to Python and Pandas](deb/ch1/)
-1. [Working with Databases](deb/ch2/)
-1. Tura-Air (aircraft and flight data)
-1. Working with APIs
-1. Docker
-1. Google Cloud Airflow
-1. Spark
-1. Serverless architecture
-1. Streaming (Pub/Sub + Spark)
-1. Data Visualization
+Section 1: Foundations
 
-Each chapter is contained in its own folder, which contains an overview, episode links, and code and data resources. Click on the chapter titles above to explore the chapter structure of the course. 
+1. [Intro](./chapters/ch1_intro/)
 
-There are ten chapters of material, each divided into daily episodes. Most of the chapters are covered in a week, but some of the bigger topics get two weeks per chapter. There are daily exercises in the form of challenge questions that ask you to do programming tasks with the skills from that day's material. Every week finishes with a graded project which ties together all of the week's material and builds on skills learned earlier in the course.
+1. [Python pt.1](./chapters/ch2_python1/)
+
+1. Python pt.2         
+
+1. Pandas        
+
+1. Team Week                                                      
+
+Section 2: Data Modeling, SQL, and the Cloud
+
+6. SQL                                                      
+
+7. Cloud, BQ, Data Studio              
+
+8. Data Modeling          
+
+9. Data Build Tool (dbt)                                                      
+
+10. Team Week        
+
+Section 3: Airflow and Spark
+
+11. Airflow pt.1            
+
+12. Airflow pt.2            
+
+13. Spark pt.1          
+
+14. Spark pt.2          
+
+15. Team Week        
+
+Section 4: Capstones
+
+16. Visualization           
+
+17. Capstones            
+
+Each chapter is contained in its own folder, which contains an overview, episode links, and code and data resources. The bootcamp covers one chapter a week. Every week finishes with a graded project which ties together all of the week's material and builds on skills learned earlier in the course.
+
+
+## Spread the word
+
+We offer our data engineering bootcamp in multiple cohorts during the year. Please help spread the word to friends and family. This bootcamp is geared for non-technical folks making a complete career change.
+
+For more information visit our website: [datastackacademy.com](https://datastack.academy)
+
+Or [download](https://storage.googleapis.com/kitten-storage/DataStackAcademy_brochure_v2022.06.02-md.pdf) a small brochure including the main highlights.
+
+[![Brochure](imgs/PamphletThumbnail.jpg)](./docs/DataStackAcademy_brochure_v2022.06.02-md.pdf)
