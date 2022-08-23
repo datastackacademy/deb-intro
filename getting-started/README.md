@@ -23,12 +23,6 @@ Here's a quick look at what's needed:
 
 2. [Python Setup](#python)
 
-1. [Google Cloud Setup](#google-cloud-setup)
-
-1. [Google Cloud CLI](#install-google-cloud-cli)
-
-1. [Docker](#install-docker)
-
 1. [Getting Started Test](#getting-started-test)
 
 1. [Conclusion - Course Overview](#conclusion---course-overview)
@@ -45,7 +39,7 @@ Here's a quick look at what's needed:
 
 Follow the instructions for [Windows Subsystem for Linux (WSL) setup](windows-setup.md). After WSL installation, return here and continue the next steps on this guide.
 
-**NOTE:** As Windows users, you will install Python, GCloud command line, and the git repo (below) on your Ubuntu WSL machine. **NOT** your native Windows machine. You're welcome to install these on Windows as well (specially Python); but they run on WSL.
+**NOTE:** As Windows users, you will install Python, GCloud command line, and the git repo (below) on your Ubuntu WSL machine, **NOT** your native Windows machine. You're welcome to install these on Windows as well (specially Python); but they run on WSL.
 
 <br/><br/>
 
@@ -82,21 +76,11 @@ Now, let's add the **top data engineering** extensions:
 
     4. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (by Yu Zhang)
 
-    5. [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) (by Microsoft)
-
-    6. [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) (by Ritwick Dey)
-
-    7. [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) (by Microsoft)
-
-    8. [MySQL](https://marketplace.visualstudio.com/items?itemName=formulahendry.vscode-mysql) (by Jun Han)
-
-    9. [Cloud Code](https://marketplace.visualstudio.com/items?itemName=GoogleCloudTools.cloudcode) (by Google Cloud)
 
     **NICE TO HAVE**
 
     1. [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) (by Jun Han)
     2. [CSV Rainbow](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) (by mechatroner)
-    3. [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) (by alexcvzz)
     4. [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) (by Street Side Software)
    
 ### VS Code Basics
@@ -248,225 +232,6 @@ Now, you can use the File menu to open any `ipynb` notebooks in your project. Fo
 
 <br/><br/>
 
-## Google Cloud Setup
-
-There are multiple steps in setting up Google Cloud:
-1. [Account creation](#create-a-google-cloud-account)
-2. [Project creation](#create-a-cloud-project)
-3. [Setting a spending budget](#set-a-spending-budget)
-4. [Storage bucket creation](#google-cloud-storage-bucket)
-
-<br/>
-
-This course is completely based on **Google Cloud**. Learning Data Engineering on the Cloud is a **huge** advantage. We cannot emphasis this enough. Hopefully, by the end of this course you can pass the Google Cloud certification exam which will give you a big advantage on the job market. 
-
-Google Cloud Platform is commonly abbreviated as **GCP**.
-
-In order to create a GCP account, you must have a **Gmail** account first. [Create a Gmail account](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp) if you don't have one already.
-
-
-Google offers a **$300.00** cloud credit to new users. That should be more than enough to finish this course. In fact, most services used here classify under the **free** usage tier. But, Google will ask you to enter a **credit card** information to create the account.
-
-To start your Google Cloud account and use your $300.00 trial credit follow the instructions below.
-
-<br>
-
-### Create a Google Cloud Account 
-
-1. Go to the [Google Cloud Console](console.cloud.google.com) and **login** using your **Google ID**.
-
-2. On the main dashboard click the "TRY FOR FREE" button to activate your $300.00 cloud credit.
-
-    ![Logging into the GCP console](img/gcp-01.png)
-
-    If you do **NOT** see this option, you can also access it by choosing **"Billing"** from the menu and navigating to **"Add billing account"**. You should be presented with the option to activate your credit once you start setting up your billing account.
-
-3. Agree to term and conditions and complete the verification process on the next screen.
-
-4. Finish the trial setup by entering your payment information. Don't worry, we will put **guardrails** to notify you if you're getting close to the $300 limit so that you won't have to pay out of pocket.
-
-    ![GCP free trial setup](img/gcp-04.png)
-
-5. Click **"START MY FREE TRIAL"**
-
-<br/>
-
-### Create a Cloud Project
-
-Google automatically creates a project for you called "My First Project". Let's create another one:
-
-1. Enter **"Create a Project"** in the big search bar on top.
-
-    ![craete a project](img/gcp-05.png)
-
-
-2. Give your project a descriptive name. Our examples are going to use **"deb-01"** naming. If you choose a project name that's already in use, Google Cloud will add an ID number to the end of it; be aware of this as you're working with your project.
-
-
-3. Choose a billing account for your project, and create it.
-
-
-Your _currently active_ project is always displayed on top left corner next to the Google Cloud Platform banner in the **Project Selector**.
-
-
-4. Open the project Project Selector pop up and make sure to select the project you just created.
-
-    ![project selector](img/gcp-07.png)
-
-5. **Optional:** You can Delete the "My First Project" by clicking "Manage" icon. Select the project you like to delete and go through the validation step.
-
-6. Choose **"Billing"** from the main menu on the left. If you see a prompt to **"Link Billing Account"**, go ahead and follow the prompt and link your main billing account called: "My Billing Account".
-
-    **Note:** The billing account may already be linked automatically. In which case don't worry about this step.
-
-    ![link billing account](img/gcp-12.png)
-
-<br/>
-
-### Set a Spending Budget
-
-Let's make sure we set spending budget and alerts so that we're notified if things start to get our of hand!
-
-1. Choose **"Billing"** from the main menu (on the left) and select **"Budgets & alerts"**.
-
-1. Click **"CREATE BUDGET"**
-
-1. Name the budget **"B-100"**, choose **"Monthly"** time range, AND make sure **"All Projects"** and **"All services"** are selected; then click "NEXT".
-
-    ![budget](img/gcp-13.png)
-
-1. Enter **"$100"** for the budget Amount and click "NEXT".
-1. Create three alert levels for 50%, 75%, and 100% of the budget. Make sure the "Email alerts" options is selected. 
-
-    ![budget](img/gcp-14.png)
-
-1. Hit "FINISH"
-
-You will now be notified when you spend over $50, $75, and $100 per month. Be sure to keep an eye out for these emails. You should not reach these limits in our class **unless** you forget to turn off services (per instructed later).
-
-<br/>
-
-### Google Cloud Storage Bucket
-
-Google Storage is a big Cloud storage that's accessible from anywhere in the world. Think of it as a huge distributed hard drive that you can use anywhere. Google Cloud Storage (**GCS**) is the base storage for all other services as well. Other GCloud services (such as BigQuery, Dataflow, or Pub/Sub) can read/write information to GCS; therefore it makes it the ideal place to exchange data between various Cloud services. You're always able to closely manage access to files created on GCS. This will allow you to closely monitor which applications and users can read/write data on GCS.
-
-Files on GCS are organized into **buckets**. A GCS Bucket is uniquely identifiable URL space within GCS. Think of it as the hard drive name that's **globally** and uniquely identifiable. Therefore when you create a new GCS bucket you must insure your bucket name is not used by anyone else in the World. Google will do the check for you.
-
-<br/>
-
-Let's create a GCS bucket that we will use throughout this course:
-
-1. Search for **"Storage"** on the top search box
-
-2. Click on the big blue **"+ CREATE BUCKET"** button on top
-
-3. Choose a bucket name. This has to be globally unique. Do something like: `MY-GOOGLE-ID-deb` or `MY-COOL-NICKMANE-deb`
-
-    ![GCS setup: naming your bucket](img/gcs-create_bucket.png)
-    
-4. Remember your bucket name. We're going to use this throughout the course
-
-5. Click next, choose **"Single Region"** for the type and select **"us-central1 (Iowa)"** for your bucket region.
-
-    **Bucket Region**
-
-    You would typically choose a bucket region close to your geographic location to reduce network traffic delays. Although for this course (for simplicity) we're using us-central1.
-
-    ![GCS bucket creation instructions](img/gcs-bucket_region.png)
-
-6. Click CONTINUE on the next three screens to accept the default parameters for Storage Class, Access Controls, and Advanced settings.
-
-7. Click CREATE and after a few seconds you should be able to see your bucket
-
-<br/>
-
-### Setup a Service Account
-
-Google Cloud manages user access and controls per project. You can add users and roles to your project by accessing the "IAM & Admin > IAM" from the menu page. This page will show you all the users which can currently access your project. Each user can be assigned various roles to limit their access levels. By default you should always see yourself with the project "Owner" role. The Project Owner is the highest level of access which enables the user to access all resources within a project and assign access to other users.
-
-<br/>
-
-Now, let's add a new **"Service Account"** for this project. A Service Account is an account that's used by your code (APIs and SDKs). You can think of it as a "bot" (robot) account that is not a person.
-
-To create a new Service Account:
-
-1. Click on **"IAM & Admin > Service Accounts"** from the menu bar
-2. Click the big **"+ CREATE SERVICE ACCOUNT"** button on top
-
-    ![service account](img/gcp-15.png)
-
-3. Under step 1: Name your service account "airliner-sa" and click "CREATE"
-4. Under step 2: Choose either **"Basic > Owner"** OR "Project > Owner" under the **Role** dropdown the click CONTINUE
-   
-    ![service account](img/gcp-16.png)
-
-5. Under step 3: Leave this step empty as-is and click **DONE**
-
-Now, we need to create a **secret key** for this Service Account. Keys are the secret code that authenticates our code to use Cloud services. You **MUST** always protect this key and never share it with **anyone**. If your key is compromised, hackers can use it to start cloud services and mine for bitcoin on your bill! 
-
-1. From the main **"IAM & Admin > Service Accounts"** select **"Manage keys"** from the airliner-sa **Actions** menu on the right.
-
-    ![manage keys](img/gcp-17.png)
-
-1. Click **"Add Key"** and **"Create new key"**. Choose **JSON** for the key type and click **CREATE**
-2. This will download a JSON file on your computer. **Save** this file in a safe location.
-
-<br/><br/>
-
-## Install Google Cloud CLI
-
-Google Cloud CLI is a series of command line utilities (known as `gcloud`) to access and manage Cloud resources. Being able to use command line effectively builds effective habits that will come very handy on projects. Install and learn to use command line tools like gcloud, gsutil, and bq (bigquery interface) persistently.
-
-<br/>
-
-**NOTE**: **WSL** users should install the CLI under their Ubuntu WSL machine. Follow the instructions for **Debian/Ubuntu** and **NOT** the Windows instructions. You can additionally install the CLI under Windows if you prefer to have both.
-
-<br/>
-
-Follow the Google [**instructions**](https://cloud.google.com/sdk/docs/install-sdk) to install and setup the `gcloud` CLI.
-
-<br/>
-
-After you've installed GCloud SDK, run the init configurations to setup your install:
-
-```bash
-gcloud init
-```
-
-Link your Google Account and select the deb-01 project, created in the previous steps, as your default project.
-
-To test if things are running smoothly, check to see if you can list your project and GCS storage bucket created in the previous steps:
-
-```bash
-gcloud projects list
-gsutil ls
-```
-
-<br/><br/>
-
-## Install Docker
-
-Docker is a containerization tool. It enables various software such as Databases and Big Data applications to run on your machine (as containers) without going through complex installation processes. Docker is also one of the main technologies used behind the scenes to build Cloud services. We will extensively cover this technology in Chapter 5.
-
-<br/>
-
-**NOTE:** **WSL** users should follow the Docker installation for Windows using **"WSL 2 backend"**. 
-
-<br/>
-
-Follow the [**Docker Installation**](https://docs.docker.com/get-docker/) guide.
-
-<br/>
-
-In order to test your docker install, open a terminal and run:
-
-```bash
-docker run hello-world
-```
-
-This command should execute without any issues.
-
-<br/><br/>
 
 # Getting Started Test
 
@@ -507,32 +272,9 @@ python -c 'import pandas as pd; print(pd.DataFrame(data={"venv-test": ["ok"]}))'
 deactivate
 rm -rf venv
 
-
-# --------------------------------
-# test google cloud command line (gcloud)
-gcloud version
-gcloud info
-gcloud projects list
-gcloud storage list
-gsutil list
-bq version
-
-
-# --------------------------------
-# test docker
-docker version
-docker run hello-world
-docker system prune -f 
-
-
 # --------------------------------
 # test vs code
 code .
 
 ```
 
-<br/><br/>
-
-# Conclusion - Course Overview
-
-Now that you have set up your development environment, please move forward to the [Course Overview](course-overview.md).

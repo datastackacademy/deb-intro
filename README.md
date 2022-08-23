@@ -17,7 +17,7 @@ First, take a look at the [daily setup instructions](./getting-started/daily_set
 
 This information will have you install all the necessary software to start this course.
 
-
+> If you prefer, it's possible to skip the setup and follow along with most of the material by running notebooks in [Google Colaboratory online](https://colab.research.google.com/), instead of in your local VS Code.
 
 ### Bootcamp Overview
 
