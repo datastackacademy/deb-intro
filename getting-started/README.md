@@ -39,7 +39,7 @@ Here's a quick look at what's needed:
 
 Follow the instructions for [Windows Subsystem for Linux (WSL) setup](windows-setup.md). After WSL installation, return here and continue the next steps on this guide.
 
-**NOTE:** As Windows users, you will install Python, GCloud command line, and the git repo (below) on your Ubuntu WSL machine, **NOT** your native Windows machine. You're welcome to install these on Windows as well (specially Python); but they run on WSL.
+**NOTE:** As Windows users, you will install Python and the git repo (below) on your Ubuntu WSL machine, **NOT** your native Windows machine. You're welcome to install these on Windows as well (especially Python); but they run on WSL.
 
 <br/><br/>
 
