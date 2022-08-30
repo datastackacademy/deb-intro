@@ -8,7 +8,7 @@
 
 Welcome to the intro repository for Data Engineering Bootcamp! The full bootcamp curriculum contains seventeen chapters, taught over seventeen weeks. This public preview is limited to a modified version of the first two chapters of material.
 
-Learn more about the course at [datastack.academy](https://www.datastack.academy/).
+Learn more about the course at [datastack.academy](https://www.datastack.academy/), and check out the course outline below.
 
 ## The Basics
 What you're looking at now is a _repository_, also called a _repo_. A repository is a collection of a project's files. GitHub is the most popular site for storing and sharing repositories.
@@ -35,11 +35,33 @@ git clone https://github.com/datastackacademy/deb-intro.git
 
 That's it! Now you have a folder called 'deb-intro' containing the whole repository. Look in your file system to check it out.
 
-First, follow along with the [Getting Started Guide](./getting-started/) to set up your development environment, and take a look at the [daily setup instructions](./getting-started/daily_setup.md). If you're on Windows, please also follow the instructions in the [Windows setup guide](./getting-started/window-setup.md), so you can follow along with the Unix bash terminal lessons.
+## Notebooks in Colab
+We'll go through our lessons using _notebooks_. Notebooks are interactive files with cells that can be either _Markdown_ (written for humans to read, like the file we're in now) or _Python_ (written for computers to read. Python is a popular programming language, and the one we use in this course).
 
-This information will have you install all the necessary software to start this course.
+To use Colab, you'll need to have a Google account, and to be signed into it. 
 
-> If you prefer, it's possible to skip the setup and follow along with most of the material in this intro by running notebooks in [Google Colaboratory online](https://colab.research.google.com/), instead of in your local code editor. Chapter 1, episode 1 will show you how to do that.
+To open a notebook in Colab:
+1. Go to [https://colab.research.google.com/](https://colab.research.google.com/) in your browser.
+2. Click 'Upload', then 'Choose File'.
+3. Navigate to where you cloned the `deb-intro` repo, then click through the file tree until you get to the notebook you want.
+4. Select it, and presto! It will open in Colab. The notebook, and any changes you make, will be saved in your Google Drive.
+
+**NOTES:**
+
+1. It's possible that some of the content blocks are collapsed. To make sure that you see all the steps, expand the block by cliking the small arrow next to it.
+
+   ![collapse_expand](imgs/colab-expand-collapse.png)
+
+1. The gray blocks are Python code cells. You can click and edit them. In some of the exercises, we'll have to edit a Python cell and run it before we can continue to the next section, so _please make sure that you **complete** and **run** each code cell before moving onto to the next one_. You can run the code by clicking the _run_ icon to the left of the block when you hover over it.
+
+   ![run_code](imgs/colab-run-code.png)
+
+1. Some of the code cells depend on the values from the previous ones, so it's very important that you run each code cell before moving onto the next. Otherwise, you may get an error.
+
+## First Steps
+If you think data engineering might be your thing, there's additional information about the Data Stack Academy bootcamp below. But for now, let's get started with Python! 
+
+Open the folder `ch1_intro` and read the README for the chapter. Then open episode 1, and the README for that episode will tell you where to go next.
 
 ### Bootcamp Overview
 
