@@ -7,19 +7,28 @@ We believe that we have put together a course curriculum that is second to none.
 
 ## First, the Terminal
 
-In the instructions below an throughout this course, you'll see commands written in code blocks, like this:
+The terminal is where you can navigate your file system, run code, and, like we're doing here, install software. In the instructions below an throughout this course, you'll see terminal commands written in code blocks, like this:
+
 ```bash
 some_command
 ```
-The terminal is where you can navigate your file system, run code, and, like we're doing here, install software.
 
 If you've never used the terminal on your computer before, open one now and type your very first command, which will return the name of the current user:
 
 ```bash
 whoami
 ```
-
 We'll learn more about commands in Chapter 1.
+
+## Clone the Repository
+
+All the files a project needs are kept in a _repository_. Most data engineering teams, including Data Stack Academy, keep their repositories on GitHub, the site you're on right now! To get a copy of a repository for your personal computer, where you can edit and run it, you'll have to make a clone.
+
+In your terminal, run the command 
+```bash
+git clone https://github.com/datastackacademy/deb-intro.git
+```
+![terminal with clone command](./img/clone_command.png)
 
 <br/><br/>
 
