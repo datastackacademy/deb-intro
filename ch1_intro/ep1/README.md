@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the very first episode of **Data Engineering bootcamp**! You know what they say...the first step is always the hardest. Not completely true... We've done everything to make this first lesson as engaging as possible. So let's get right to it 😉
+Welcome to the very first episode of **Data Engineering bootcamp**! You know what they say...the first step is always the hardest. Not completely true... but we've done everything to make this first lesson as engaging as possible. So let's get right to it 😉
 
 ## Why Python
 
@@ -16,16 +16,6 @@ Python was designed with the goal of having a simple syntax that is less clutter
 
 <br>
 
-
-# Notebooks
-
-Jupyter Notebooks (or notebooks) is a tool for developing and exploring Python code and data. It's a browser based tool that allows you to develop and run python code interactively. Jupyter provides code blocks, markdown blocks, and graph/visualization capabilities. 
-
-You can execute python code blocks, run bash terminal blocks, explain your thoughts with markdown blocks, and visualize the results in graphs.
-
-This is extremely powerful and makes developing and sharing code very easy. Notebooks (for short) are shared amongst _data engineers_ and _data scientists_ all the time! It fact it's often the data engineer job to review an exploratory (or development) notebook designed by a data scientist and _productionalize_ it. We'll get to this later; but productionalizing a code means making it run on a larger, secure, and reliable production-ready environment; working on real data versus development samples.
-
-<br>
-After all that setup, you're finally ready to get to the fun part: Python. In the `notebooks` folder of this repository, you'll find `01-python_intro.ipynb`, which you can open using Colab. It has instructions, examples, and exercises for you to work through.
+After all that setup, you're finally ready to get to the fun part: Python. In the `notebooks` folder of this repository, you'll find `01-python_intro.ipynb`, which you can open using [Colab](https://colab.research.google.com/). It has instructions, examples, and exercises for you to work through.
 
 
