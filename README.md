@@ -6,7 +6,7 @@
 
 ## The Data Engineering Hub
 
-Welcome to the intro repository for Data Engineering Bootcamp. This repository contains the first 2 chapters of our larger data engineering curriculum, which is taught in a 17-week bootcamp. This public preview is limited to the Getting Started Guide and first two chapters of material.
+Welcome to the intro repository for Data Engineering Bootcamp! The full bootcamp curriculum contains seventeen chapters, taught over seventeen weeks. This public preview is limited to the Getting Started Guide and first two chapters of material.
 
 Learn more about the course at [datastack.academy](https://www.datastack.academy/)!
 
@@ -17,7 +17,7 @@ First, take a look at the [daily setup instructions](./getting-started/daily_set
 
 This information will have you install all the necessary software to start this course.
 
-> If you prefer, it's possible to skip the setup and follow along with most of the material by running notebooks in [Google Colaboratory online](https://colab.research.google.com/), instead of in your local VS Code.
+> If you prefer, it's possible to skip the setup and follow along with most of the material by running notebooks in [Google Colaboratory online](https://colab.research.google.com/), instead of in your local code editor.
 
 ### Bootcamp Overview
 
@@ -72,6 +72,6 @@ We offer our data engineering bootcamp in multiple cohorts during the year. Plea
 
 For more information visit our website: [datastackacademy.com](https://datastack.academy)
 
-Or [download](https://storage.googleapis.com/kitten-storage/DataStackAcademy_brochure_v2022.06.02-md.pdf) a small brochure including the main highlights.
+Or [download](./docs/DataStack_brochure_v2022.08.30-sm.pdf) a small brochure including the main highlights.
 
-[![Brochure](imgs/PamphletThumbnail.jpg)](./docs/DataStackAcademy_brochure_v2022.06.02-md.pdf)
+[![Brochure](imgs/PamphletThumbnail.jpg)](./docs/DataStack_brochure_v2022.08.30-sm.pdf)
