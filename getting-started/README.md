@@ -1,17 +1,15 @@
 
 ## Overview
 
-Welcome to Data Stack Academy's Data Engineering Bootcamp. 
+Welcome to Data Stack Academy's Data Engineering Bootcamp! 
 
-By the end of this course you will be a well-seasoned Cloud Engineer and learn to use Google Cloud Platform (GCP) services.We have specifically chosen Google Cloud over other cloud platforms because we believe GCP to offer the best combination of services in the data engineering space, and because the GCP services are the closest to their open source Big Data counterparts. Now days, nearly all applications run on cloud.
-
-We believe that we have put together a course curriculum that is second to none. We hope you enjoy this course and we are confident that you will learn the necessary skills to start a rewarding career in Data Engineering.
+We believe that we have put together a course curriculum that is second to none. We hope you enjoy this course, and we are confident that you will learn the necessary skills to start a rewarding career in Data Engineering.
 
 <br/><br/>
 
 # Setting up your development environment
 
-Before we begin to go through the course material, we need to install and configure all the tools necessary for this course. Data Engineering requires working with a lot of tools; so buckle down and make sure you follow this section completely.
+Before we begin to go through the course material, we need to install and configure all the tools necessary for this course. Data Engineering requires working with a lot of tools, so buckle down and make sure you follow this section completely.
 
 Here's a quick look at what's needed:
 
@@ -21,11 +19,16 @@ Here's a quick look at what's needed:
 
 1. [Visual Studio Code](#visual-studio-code-vs-code) (VS Code) & Data Engineering Extensions
 
+    VS Code is a great tool for writing, running, and debugging code
+
 2. [Python Setup](#python)
+
+    Python is the programming language we use.
 
 1. [Getting Started Test](#getting-started-test)
 
-1. [Conclusion - Course Overview](#conclusion---course-overview)
+    Make sure everything's properly set up.
+
 
 <br/><br/>
 
