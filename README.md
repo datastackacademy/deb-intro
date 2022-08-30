@@ -13,15 +13,14 @@ Learn more about the course at [datastack.academy](https://www.datastack.academy
 ## The Basics
 What you're looking at now is a _repository_, also called a _repo_. A repository is a collection of a project's files. GitHub is the most popular site for storing and sharing repositories.
 
-In this `deb-intro` repo, we'll go read the files called `README`, and work through the interactive notebooks in the `chapters` folder. The other files are scaffolding, and you can ignore them.
+In this `deb-intro` repo, we'll go read the files called `README`, which introduce each section, and work through the interactive notebooks in the chapter folders. The other files are scaffolding, and you can ignore them.
 
-In class, we _clone_ the repository for the curriculum (cloning means saving a copy on your personal computer), then run and edit the code in a code editor. Here, to save you from having to install all the software, we'll clone the repository and run the notebooks online, with [Google Colab](https://colab.research.google.com/). 
+To edit and run the code in a repository, you'll need to _clone_ it. Cloning means saving a copy on your personal computer. In the bootcamp classes, we run, edit, and debug the cloned code in a code editor. Here, to save you from having to install all the software, we'll run the code online, with [Google Colab](https://colab.research.google.com/). 
 
 ## Cloning the Repository
 
 So, how do we clone a repository from GitHub? Follow these steps:
-1. **Open a terminal**
-    The _terminal_ is the command center for your computer. Nearly anything you'd want to do on your computer can be done here.
+1. Open a _terminal_. The terminal is the command center for your computer. Nearly anything you'd want to do on your computer can be done here.
 
     Keyboard shortcuts for opening a terminal:
     - Linux: `[Ctrl + Alt + t]`
@@ -31,6 +30,7 @@ So, how do we clone a repository from GitHub? Follow these steps:
 ```bash
 git clone https://github.com/datastackacademy/deb-intro.git
 ```
+...and hit `Enter`.
 ![command to clone repo](./imgs/clone_command.png)
 
 That's it! Now you have a folder called 'deb-intro' containing the whole repository. Look in your file system to check it out.
@@ -62,6 +62,10 @@ To open a notebook in Colab:
 If you think data engineering might be your thing, there's additional information about the Data Stack Academy bootcamp below. But for now, let's get started with Python! 
 
 Open the folder `ch1_intro` and read the README for the chapter. Then open episode 1, and the README for that episode will tell you where to go next.
+
+Congratulations on taking the first steps!
+
+<br>
 
 ### Bootcamp Overview
 
