@@ -5,6 +5,22 @@ Welcome to Data Stack Academy's Data Engineering Bootcamp!
 
 We believe that we have put together a course curriculum that is second to none. We hope you enjoy this course, and we are confident that you will learn the necessary skills to start a rewarding career in Data Engineering.
 
+## First, the Terminal
+
+In the instructions below an throughout this course, you'll see commands written in code blocks, like this:
+```bash
+some_command
+```
+The terminal is where you can navigate your file system, run code, and, like we're doing here, install software.
+
+If you've never used the terminal on your computer before, open one now and type your very first command, which will return the name of the current user:
+
+```bash
+whoami
+```
+
+We'll learn more about commands in Chapter 1.
+
 <br/><br/>
 
 # Setting up your development environment
@@ -42,7 +58,7 @@ Here's a quick look at what's needed:
 
 Follow the instructions for [Windows Subsystem for Linux (WSL) setup](windows-setup.md). After WSL installation, return here and continue the next steps on this guide.
 
-**NOTE:** As Windows users, you will install Python and the git repo (below) on your Ubuntu WSL machine, **NOT** your native Windows machine. You're welcome to install these on Windows as well (especially Python); but they run on WSL.
+**NOTE:** As Windows users, you will install Python and the git repo (below) on your Ubuntu WSL machine, **NOT** your native Windows machine. You're welcome to install these on Windows as well (especially Python), but they run on WSL.
 
 <br/><br/>
 
@@ -127,7 +143,7 @@ This renders the markdown file as **HTML** which is a lot easier to read and fol
 
 This course is developed for **Python version 3.7**. 
 
-Even though Python 3.9 and 3.10 are currently available, a lot of the dependency packages in this course don't support them. You are free to install other versions (ie: 3.9 or 3.10) but you must have a working version of python 3.7. In fact, it's very common to have multiple versions of Python installed.
+Even though Python 3.9 and 3.10 are currently available, a lot of the dependency packages in this course don't support them. You are free to install other versions (ie: 3.9 or 3.10) but you must have a working version of Python 3.7. In fact, it's very common to have multiple versions of Python installed.
 
 Check to see if you already have Python installed
 
