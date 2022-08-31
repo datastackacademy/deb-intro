@@ -2,21 +2,23 @@
 
 ## Episode Resources
 
-Hopefully by now everyone has at least the Python portion of your development environment set up. Try opening one of the notebooks in the `notebooks` folder of this episode, and make sure that you can run them locally in Jupyter (create a virtual environment, activate it, and install the `requirements.txt` file first). There is no additional setup needed for viewing the notebooks for this episode, and each of them will walk you through the concepts with code examples.
+This episode is a crash-course in command-line basics. It also looks in a bit more detail at the data types you will use most commonly as a data engineer. 
 
-This episode is a crash-course in command-line basics. It also looks in a bit more detail at the data types you will use most commonly as a data engineer. We will walk through the notebooks together in class.
-
-For a reminder of steps to set up your environment for today, reference the [daily setup guide](https://github.com/datastackacademy/data-engineering-bootcamp/blob/daily_setup_guide/getting-started/daily_setup.md).
-
-Before we dive back into Python, let's learn some command-line interface (CLI) tools. The command-line lets your search and navigate your file system. We'll get more practice with it when we start using Git and GitHub later in this chapter.
+Before we dive back into Python notebooks, let's learn some command-line interface (CLI) tools. The command-line lets your search and navigate your file system. We'll get more practice with it when we start using Git and GitHub later in this chapter.
 
 # Basic Unix-style CLI
+First, open a terminal.
 
-Here you will find a list of the most common commands. 
+    Keyboard shortcuts for opening a terminal:
+    - Linux: `[Ctrl + Alt + t]`
+    - Windows: `[Ctrl + Alt + w]`
+    - Mac: `[Cmd + space]`, then type "terminal" into the search bar
+
+Here, we will practice the most common commands. 
 
 Note: almost all of the commands described here are standard on any Linux-flavored OS, but they might not all be available on every system, depending on your distribution. Because Mac OS is based on Free BSD, most (though not all) standard Linux commands are available from a Mac OS terminal.
 
-> **NOTE:** You are expected to google and research how to use these commands on your own. For example: here is a [link](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/?ref=lbp) for working with the `find` command.
+> **NOTE:** We recommend that you also research how to use these commands on your own. For example: here is a [link](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/?ref=lbp) for working with the `find` command.
 
 You can find out more about these commands by looking up their man (manual) pages:
 `man commandname` shows you the manual page for the command 
@@ -117,6 +119,8 @@ Directories are used to group files together in a hierarchical structure. Here a
 
 Alright, now back to Python! We'll continue with the basics, looking at some built-in data types. We'll focus especially on lists and dictionaries.
 
+Before you start working through the notebooks, read the lesson below.
+
 <br>
 
 ## Built-in data types
@@ -166,9 +170,8 @@ pi = 3.14159265359
 print(x, pi)
 ```
 
-For details and practice with strings, lists, and dictionaries, work through notebooks `01_strings.ipynb`, `02_lists.ipynb`, and `03_dictionaries.ipynb`.
+For details and practice with strings, lists, and dictionaries, work through notebooks `01_strings.ipynb`, `02_lists.ipynb`, and `03_dictionaries.ipynb`. You'll find extra practice in `04_exercises.ipynb`.
 
-Once you're done with the notebooks, head to the `exercises` folder for more practice.
 <br>
 
 
