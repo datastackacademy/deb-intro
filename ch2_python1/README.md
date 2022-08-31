@@ -5,5 +5,5 @@ In chapter 1, we started to get comfortable with Python basics and the command l
 ## Chapter 2
 1. [Advanced Functions](ep1/)
 1. [Classes and Nested Collections](ep2/)
-1. [Dates, Errors, Imports](ep3/)
-1. [Unit Testing](ep4/)
+1. Dates, Errors, Imports
+1. Unit Testing

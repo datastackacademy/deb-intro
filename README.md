@@ -30,8 +30,9 @@ So, how do we clone a repository from GitHub? Follow these steps:
 ```bash
 git clone https://github.com/datastackacademy/deb-intro.git
 ```
-...and hit `Enter`.
 ![command to clone repo](./imgs/clone_command.png)
+
+...and hit `Enter`.
 
 That's it! Now you have a folder called 'deb-intro' containing the whole repository. Look in your file system to check it out.
 
@@ -48,7 +49,7 @@ To open a notebook in Colab:
 
 **NOTES:**
 
-1. It's possible that some of the content blocks are collapsed. To make sure that you see all the steps, expand the block by cliking the small arrow next to it.
+1. It's possible that some of the content blocks are collapsed. To make sure that you see all the steps, expand the block by clicking the small arrow next to it.
 
    ![collapse_expand](imgs/colab-expand-collapse.png)
 
@@ -56,10 +57,10 @@ To open a notebook in Colab:
 
    ![run_code](imgs/colab-run-code.png)
 
-1. Some of the code cells depend on the values from the previous ones, so it's very important that you run each code cell before moving onto the next. Otherwise, you may get an error.
+Some of the code cells depend on the values from the previous ones, so it's very important that you run each code cell before moving onto the next. Otherwise, you may get an error.
 
 ## First Steps
-If you think data engineering might be your thing, there's additional information about the Data Stack Academy bootcamp below. But for now, let's get started with Python! 
+If you're interested in data engineering as a career, there's additional information about the Data Stack Academy bootcamp below. But for now, let's get started with Python! 
 
 Open the folder `ch1_intro` and read the README for the chapter. Then open episode 1, and the README for that episode will tell you where to go next.
 
