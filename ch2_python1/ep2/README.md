@@ -9,10 +9,10 @@ A class in Python is like an outline or blueprint for creating a new object. The
 
 You've already been using objects; in Python, numbers, strings, and lists are all objects. When you define, say, a list, you're making an instance of a list object. It has all the methods and attributes available to any list, like `.append()`, `.sort()`, or `.pop()`. 
 
-Python can be used in a functional style, where programs are made mainly using functions, or an object-oriented style, which focuses on creating objects from classes. Though the Python language is composed mainly of objects, we focus on this course on writing code using functional programming. However, both in this course and in your career you'll encounter classes, so they're important to know. Head over the the notebook `classes_and_scope.ipynb` for more info and practice.
+Python can be used in a functional style, where programs are made mainly using functions, or an object-oriented style, which focuses on creating objects from classes. Though the Python language is composed mainly of objects, in this course we focus on writing code using functional programming. However, both in this course and in your career you'll encounter classes, so they're important to know. Head over the the notebook `01_classes_and_scope.ipynb` for more info and practice.
 
 ## Nested Lists and Dictionaries
 
 When we learned about lists and dictionaries, we saw that the objects in a list, as well as the values in the dictionaries, can be any data type: strings, booleans, numbers, even other lists or dictionaries. You can have a list of lists of lists, a dictionary of dictionary of dictionaries, a list of dictionaries of lists of dictionaries...as you can see, it can get complicated! 
 
-Learning how to work with nested data structures just takes a little practice. Head over the the notebook `nested_dicts_and_lists.ipynb` for info and exercises.
+Learning how to work with nested data structures just takes a little practice. Head over the the notebook `02_nested_dicts_and_lists.ipynb` for info and exercises.
