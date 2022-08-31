@@ -7,7 +7,7 @@ Tuples are an ordered, unchangeable collection that allows duplicate members. Th
 
 Sets are an unordered and unindexed collections that do not allow duplicates. They are less commonly used than lists or dicts but still serve an important role.
 
-Head to notebook '01_sets_and_tuples.ipynb' for more instruction and practice.
+Head to notebook `01_sets_and_tuples.ipynb` for more instruction and practice.
 
 <br/>
 
@@ -21,14 +21,14 @@ Now you know all the basic types of Collections you will encounter in Python. Th
 <br/>
 
 ## Flow Controls
-In Python, 'flow control' means how the code is executed, based on a condition. Today, we're going to look 'for' loops, 'while' loops, and 'if' conditions. Please work through notebooks '02_for_loops.ipynb', '03_while_loops.ipynb', and '04_if_conditions.ipynb' before moving on.
+In Python, 'flow control' means how the code is executed, based on a condition. Today, we're going to look 'for' loops, 'while' loops, and 'if' conditions. Please work through notebooks `02_for_loops.ipynb`, `03_while_loops.ipynb`, and `04_if_conditions.ipynb` before moving on.
 
-Once you're familiar with 'for' loops, 'while' loops, and 'if' conditions, go to notebook '05_flow_control_misc.ipynb' for more info about how flow controls can be used.
+Once you're familiar with 'for' loops, 'while' loops, and 'if' conditions, go to notebook `05_flow_control_misc.ipynb` for more info about how flow controls can be used.
 
 <br/>
 
 ## Functions
-Python functions define a block of code that can be called and run by name. Functions are one of the most common features in all modern programming languages; the ability to define a portion of code and call it by name makes code much more compact and reusable (since it only has to be updated in one place, the function definition, rather than every place the function is called). A function can accept inputs and can return values. Go to notebook '06_functions.ipynb' to learn more about functions.
+Python functions define a block of code that can be called and run by name. Functions are one of the most common features in all modern programming languages; the ability to define a portion of code and call it by name makes code much more compact and reusable (since it only has to be updated in one place, the function definition, rather than every place the function is called). A function can accept inputs and can return values. Go to notebook `06_functions.ipynb` to learn more about functions.
 
 <br/>
 
