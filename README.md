@@ -20,13 +20,19 @@ To edit and run the code in a repository, you'll need to _clone_ it. Cloning mea
 ## Cloning the Repository
 
 So, how do we clone a repository from GitHub? Follow these steps:
-1. Open a _terminal_. The terminal is the command center for your computer. Nearly anything you'd want to do on your computer can be done here.
+
+1. Install Git. Git is a free version control software. _Version control_ means that you can make many different version of a project while you're working on it, so you can try stuff out without losing your old work.
+
+To install Git, go to the [Git website](https://git-scm.com/downloads) and click on the operating system for your computer.
+
+2. Open a _terminal_. The terminal is the command center for your computer. Nearly anything you'd want to do on your computer can be done here.
 
     Keyboard shortcuts for opening a terminal:
     - Linux: `[Ctrl + Alt + t]`
     - Windows: `[Ctrl + Alt + w]`
     - Mac: `[Cmd + space]`, then type "terminal" into the search bar
-2. In the terminal, enter the command
+
+3. In the terminal, enter the command
 ```bash
 git clone https://github.com/datastackacademy/deb-intro.git
 ```
