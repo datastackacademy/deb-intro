@@ -78,9 +78,9 @@ Congratulations on taking the first steps!
 
 Section 1: Foundations
 
-1. [Intro](./chapters/ch1_intro/)
+1. [Intro](https://github.com/datastackacademy/deb-intro/tree/main/ch1_intro)
 
-1. [Python pt.1](./chapters/ch2_python1/)
+1. [Python pt.1](https://github.com/datastackacademy/deb-intro/tree/main/ch2_python1/)
 
 1. Python pt.2         
 
